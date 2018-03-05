@@ -25,7 +25,7 @@ SECRET_KEY = 'eyr_ak06a*=9(o)ju0^(p)$w#j_+50tg&^vq=9p1187o9ao#pg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'valeria13.pythonanywhere.com']
+ALLOWED_HOSTS = ['valeria13.pythonanywhere.com']
 
 
 # Application definition
