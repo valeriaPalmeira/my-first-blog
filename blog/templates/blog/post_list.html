@@ -5,25 +5,17 @@
 </head>
 
 <body>
-    <p>Olá </p>
-    <p>Está funcionando </p>
     <div>
         <h1><a href="">Django Girls Blog</a></h1>
     </div>
-
+    {% for post in posts %}
     <div>
-        <p>Públicado: 06.03.2014, 15:39</p>
-        <h2><a href="">Primeira Postagem</a></h2>
-        <p>A primeira coisa que você precisa entender é que um site é só um monte de arquivos salvos em um disco rígido. Assim como acontece com os filmes, músicas ou fotos que você tem no computador. No entanto, existe uma parte que é exclusiva para sites:
-            essa parte inclui código de computador chamado HTML.</p>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
+    {% endfor %}
 
-    <div>
-        <p>Públicado: 06.03.2014, 15:43</p>
-        <h2><a href="">Segunda Postagem</a></h2>
-        <p>Então, igual a todos os outros arquivos, os arquivos HTML precisam ser armazenados em um disco rígido. Para a internet, nós usamos especiais e poderosos computadores chamados de servidores. Eles não têm tela, mouse ou teclado, porque sua finalidade
-            principal é armazenar dados e servi-los. É por isso que eles são chamados de servidores..--porque eles servem, a você, dados.</p>
-    </div>
 
 </body>
 
